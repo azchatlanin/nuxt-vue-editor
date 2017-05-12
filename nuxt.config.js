@@ -14,6 +14,7 @@ module.exports = {
   loading: { color: '#3B8070' },
 
   build: { 
+    vendor: ['jquery'],
     extend (config, ctx) {
       if (ctx.isClient) {
         config.module.rules.push({
