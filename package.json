@@ -2,7 +2,7 @@
   "name": "nuxt-skeditor",
   "version": "1.0.0",
   "description": "Nuxt.js project",
-  "author": "Andrey Zimin <zimin6077@gmail.com>",
+  "author": "Andrey Zimin <info@pepelats.pro>",
   "private": true,
   "dependencies": {
     "css-loader": "^0.28.1",

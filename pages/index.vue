@@ -1,14 +1,19 @@
-<template lang="html">
+<template>
 <div>
-  <h1>
-    vue 2 editor with nuxt.js
-  </h1>  
+  <br>
+  <br>
+  <div v-html="content"></div>
+  <br>
+  <hr> 
+  <br>
+  <button @click="saveContent">SEND in CONSOLE</button>
+  <br>
+  <br>
   <vue-editor v-model="content"></vue-editor>
 </div>
 </template>
 
-<script>
-  
+<script>  
 import VueEditor from '../components/vueeditor.vue'
   
 export default {
@@ -17,15 +22,14 @@ export default {
   },
   data() {
      return {
-       content: '<h1>Some initial content</h1>'  
+       content: 'Some initial content' 
      }
   },
-  head: {
-    title : 'Vue 2 editor with nuxt.js'
+  methods: {
+    saveContent() {
+      console.log(this.content)
+    }
   }
 }
 </script>
-
-<style lang="css">
-</style>
 
